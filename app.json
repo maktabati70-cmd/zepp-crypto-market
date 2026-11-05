@@ -1,0 +1,32 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appId": 1000008,
+    "appName": "Crypto Market",
+    "appType": "app",
+    "version": { "code": 1, "name": "1.0.0" },
+    "icon": "icon.png",
+    "vender": "KIM",
+    "description": "Crypto prices, market overview and top movers on your wrist"
+  },
+  "permissions": ["data:os.device.info", "device:os.local_storage"],
+  "runtime": {
+    "apiVersion": { "compatible": "2.0", "target": "2.0", "minVersion": "2.0" }
+  },
+  "targets": {
+    "common": {
+      "module": {
+        "page": { "pages": ["page/index"] },
+        "app-side": { "path": "app-side/index" },
+        "setting": { "path": "setting/index" }
+      },
+      "platforms": [
+        { "name": "t-rex-2", "deviceSource": 418 },
+        { "name": "t-rex-2-w", "deviceSource": 419 }
+      ],
+      "designWidth": 454
+    }
+  },
+  "i18n": { "en-US": { "appName": "Crypto Market" } },
+  "defaultLanguage": "en-US"
+}
